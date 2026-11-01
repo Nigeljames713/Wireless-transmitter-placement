@@ -1,59 +1,123 @@
- Wireless Transmitter Placement Visualizer
+# Wireless Transmitter Placement Visualizer
 
-A GUI-based application that demonstrates the Backtracking Algorithm through a simplified wireless transmitter placement problem.
+A GUI-based application that demonstrates the **Backtracking Algorithm** through a simplified wireless transmitter placement problem.
 
- Project Overview
+---
 
-This application finds valid transmitter locations on a grid while maintaining a user-defined minimum separation distance between transmitters.
+## Project Overview
 
-It demonstrates how backtracking can solve constraint-based placement problems through systematic searching and decision reversal.
+The application finds valid transmitter locations on a grid while maintaining a user-defined minimum separation distance between transmitters.
 
- Features
+It demonstrates how backtracking can solve constraint-based placement problems through systematic searching, constraint checking, and decision reversal.
+
+## Features
 
 - Interactive grid-based visualization
 - Configurable grid size
 - Adjustable number of transmitters
-- Minimum separation configuration
+- Customizable minimum separation distance
 - First-solution and all-solutions modes
 - Step-by-step backtracking visualization
 - Animated accepted and rejected positions
 - Live statistics and search progress
 - Adjustable animation speed
 
- Technologies Used
+## Technologies Used
 
-- Python
-- Tkinter
-- Backtracking Algorithm
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| Tkinter | Graphical user interface |
+| Backtracking | Algorithm implementation |
 
- How to Run
+## Application Screenshots
 
-1. Clone or download this repository.
-2. Open the project directory.
-3. Run:
+### 1. Application Dashboard
+
+
+
+### 2. Wireless Transmitter Placement
+
+![Transmitter Placement](screenshots/02-transmitter-placement.png)
+
+### 3. Backtracking Visualization
+
+![Backtracking Visualization](screenshots/03-backtracking-visualization.png)
+
+### 4. Conflict Detection
+
+![Conflict Detection](screenshots/04-conflict-detection.png)
+
+### 5. Live Statistics
+
+![Live Statistics](screenshots/05-live-statistics.png)
+
+### 6. Placement Configuration
+
+![Separation Settings](screenshots/06-separation-settings.png)
+
+## Algorithm Explanation
+
+The application uses the **Backtracking Algorithm** to find valid transmitter locations.
+
+1. Start with an empty grid.
+2. Select a candidate location.
+3. Calculate its Euclidean distance from previously selected transmitters.
+4. Accept the location if it satisfies the minimum separation constraint.
+5. Reject the location if it violates the constraint.
+6. If a valid configuration cannot be completed, undo the previous selection and explore another combination.
+7. Continue until the requested number of transmitters is placed or all possible configurations have been explored.
+
+## Complexity Analysis
+
+Let:
+
+- V = Total number of candidate grid cells.
+- K = Number of transmitters to be placed.
+
+**Time Complexity:** O(V^K) as a conservative upper bound for the search, with pruning reducing the actual search space.
+
+**Auxiliary Space Complexity:** O(K) for the recursive search and selected transmitter locations, excluding GUI storage.
+
+## How to Run
+
+**Step 1:** Clone the repository.
+
+```bash
+git clone https://github.com/YOUR-USERNAME/wireless-transmitter-placement.git
+```
+
+**Step 2:** Navigate to the project directory.
+
+```bash
+cd wireless-transmitter-placement
+```
+
+**Step 3:** Run the application.
 
 ```bash
 python wireless_transmitter_visualizer.py
 ```
 
- Run Tests
+## Run Tests
+
+Execute the built-in test cases:
 
 ```bash
 python wireless_transmitter_visualizer.py --test
 ```
 
- Algorithm
+## Real-World Relevance
 
-The application uses backtracking to explore possible transmitter locations. A candidate location is accepted only if its Euclidean distance from every previously selected transmitter is at least the configured minimum separation.
+The project demonstrates a simplified model of wireless transmitter placement, where candidate installation locations must satisfy minimum separation constraints.
 
-If a candidate violates the constraint, it is rejected. If a partial placement cannot be completed, the algorithm backtracks and explores another combination.
+The same backtracking concept can be adapted to constraint-based resource placement and scheduling problems.
 
- Complexity
+**Note:** This is an educational model. It does not simulate actual radio-frequency propagation, signal strength, terrain, or wireless interference.
 
-The search explores combinations of grid cells, pruning placements that violate the distance constraint.
+---
 
-For a grid containing V candidate cells and K transmitters, the worst-case search is bounded by O(V^K), with pruning reducing the actual search space.
-
- Note
-
-This is an educational placement model. It does not simulate real radio-frequency propagation, signal strength, or actual wireless interference.
+## Author
+Name: Nigel James Noby
+Registration number: AJC24CC025
+Course: Design and Analysis of Algorithms
