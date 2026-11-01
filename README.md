@@ -1,6 +1,6 @@
  Wireless Transmitter Placement Visualizer
 
-A GUI-based application that demonstrates the **Backtracking Algorithm** through a simplified wireless transmitter placement problem.
+A GUI-based application that demonstrates the Backtracking Algorithm through a simplified wireless transmitter placement problem.
 
  Project Overview
 
