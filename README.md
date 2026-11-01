@@ -94,5 +94,7 @@ The same backtracking concept can be adapted to constraint-based resource placem
 
 ## Author
 Name: Nigel James Noby
+
 Registration number: AJC24CC025
+
 Course: Design and Analysis of Algorithms
