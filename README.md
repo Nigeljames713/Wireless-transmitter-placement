@@ -30,31 +30,6 @@ It demonstrates how backtracking can solve constraint-based placement problems t
 | Tkinter | Graphical user interface |
 | Backtracking | Algorithm implementation |
 
-## Application Screenshots
-
-### 1. Application Dashboard
-
-
-
-### 2. Wireless Transmitter Placement
-
-![Transmitter Placement](screenshots/02-transmitter-placement.png)
-
-### 3. Backtracking Visualization
-
-![Backtracking Visualization](screenshots/03-backtracking-visualization.png)
-
-### 4. Conflict Detection
-
-![Conflict Detection](screenshots/04-conflict-detection.png)
-
-### 5. Live Statistics
-
-![Live Statistics](screenshots/05-live-statistics.png)
-
-### 6. Placement Configuration
-
-![Separation Settings](screenshots/06-separation-settings.png)
 
 ## Algorithm Explanation
 
